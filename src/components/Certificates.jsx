@@ -1,5 +1,5 @@
 import React from "react";
-import udemlogo from "../assets/udemlogo.png";
+
 
 const certifications = [
   {

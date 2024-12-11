@@ -12,14 +12,19 @@ const ProjectsSection = () => {
         );
 
   return (
-    <section id="projects" className="  bg-gradient-to-r from-[#232325] to-[#2b2b2e] py-16 px-8">
+    <section
+      id="projects"
+      className="  bg-gradient-to-r from-[#232325] to-[#2b2b2e] py-16 px-8"
+    >
       <h2 className="text-white text-3xl font-bold text-center mb-8">
         My <span className="span">Projects</span>
       </h2>
-      <div className="flex justify-center flex-wrap gap-4 mb-8">
-        {categories.map((category,index) => (
+
+      {/* tabs section */}
+      <div className="grid grid-cols-2 sm:flex sm:justify-center sm:flex-wrap gap-4 mb-8">
+        {categories.map((category, index) => (
           <button
-            key={category+index}
+            key={category + index}
             className={`py-2 px-4 rounded-full text-sm font-semibold transition-all ${
               activeTab === category
                 ? "bg-gradient-to-r from-[#dd32f3] to-[#ce90cb] text-white"
@@ -34,7 +39,10 @@ const ProjectsSection = () => {
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.map((project, index) => (
-          <div key={project.id}className="bg-gray-800 card rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+          <div
+            key={project.id}
+            className="bg-gray-800 card rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
             <img
               src={project.image}
               alt={project.title}
@@ -50,7 +58,7 @@ const ProjectsSection = () => {
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech) => (
                   <span
-                    key={tech+index}
+                    key={tech + index}
                     className="text-xs bg-purple-600 text-white px-2 py-1 rounded"
                   >
                     {tech}

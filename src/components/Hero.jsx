@@ -1,25 +1,29 @@
 import React from "react";
 import profilepic from "../assets/profile.png";
 import { TypeAnimation } from "react-type-animation";
+
 import {
   AiFillLinkedin,
   AiFillGithub,
-  AiFillInstagram,
   AiFillFacebook,
   AiFillYoutube,
+  AiFillTwitterSquare,
 } from "react-icons/ai";
 
 export const Hero = () => {
-  const [linkedin, instagram, github, facebook, youtube] = [
-    "https://www.linkedin.com",
-    "https://www.instagram.com",
-    "https://www.github.com",
+  const [linkedin, twitter, github, facebook, youtube] = [
+    "http://www.linkedin.com/in/purecoders",
+    "https://x.com/Pure_Coders",
+    "https://github.com/teeladnoni",
     "https://www.facebook.com/Oyetunjiteelad",
     "https://www.youtube.com/@pure_coders",
   ];
 
   return (
-    <div className="grid md:grid-cols-2 pt-4 h-screen place-items-center max-w-[1250] mx-auto mb-8 md:mb-32 mt-14">
+    <div
+      id="home"
+      className="grid md:grid-cols-2 pt-4 h-screen place-items-center max-w-[1250] mx-auto mb-8 md:mb-32 mt-14"
+    >
       <div className="max-w-[800px]">
         <p className="text-gray-200 md:text-4xl text-2xl tracking-tight">
           Hey, I AM <br />
@@ -52,10 +56,10 @@ export const Hero = () => {
             size={30}
             className="text-blue-700 hover:scale-150"
           />
-          <AiFillInstagram
-            onClick={() => window.open(instagram, "_blank")}
+          <AiFillTwitterSquare
+            onClick={() => window.open(twitter, "_blank")}
             size={30}
-            className="hover:scale-150"
+            className="text-white hover:scale-150"
           />
           <AiFillGithub
             onClick={() => window.open(github, "_blank")}
@@ -82,10 +86,14 @@ export const Hero = () => {
             Download cv
           </button>
           <button
-            className="transform transition-transform hover:scale-105 hover:shadow-lg z-10 cursor-pointer font-bold  text-gray-200 w-1/2 mt-6 
-          p-2 border border-gray-400 rounded-xl"
+            className="relative overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg z-10 cursor-pointer font-bold text-gray-200 w-1/2 mt-6 
+                      p-2 border border-gray-400 rounded-xl  group"
           >
-            View Work
+            <span
+              className="absolute inset-0 bg-gradient-to-r from-[#6b2b72] to-[#a5079d] transition-all duration-300 scale-x-0 group-hover:scale-x-100 origin-left"
+              aria-hidden="true"
+            ></span>
+            <span className="relative z-10">View Work</span>
           </button>
         </div>
       </div>

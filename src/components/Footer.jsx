@@ -47,9 +47,9 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold span mb-4">Contact Info</h2>
             <ul className="space-y-2">
-              <li>Email: purecoder@example.com</li>
+              <li>Email: taofeekoyetunji01.com</li>
               <li>Phone: +234 9069579704</li>
-              <li>Address: 123 Main St, City, Country</li>
+              <li>Address: Osun State, Nigeria</li>
             </ul>
           </div>
         </div>

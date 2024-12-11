@@ -4,6 +4,7 @@ import { FaPhone, FaMessage, FaLocationPin } from "react-icons/fa6";
 
 
 
+
 const contactInfo = [
   {
     icon: <FaPhone size={20}/>,
@@ -13,12 +14,12 @@ const contactInfo = [
   {
     icon: <FaMessage size={20}/>,
     title: "Email",
-    description: "purecoders@gmail.com",
+    description: "taofeekoyetunji01@gmail.com",
   },
   {
     icon: <FaLocationPin size={20}/>,
     title: "Address",
-    description: "New Town, through back city",
+    description: "Osun State, Nigeria",
   },
 ];
 

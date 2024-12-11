@@ -6,12 +6,14 @@ import {
   FaHtml5,
   FaJs,
   FaGithub,
+  FaNodeJs,
   FaDatabase,
 } from "react-icons/fa";
 const skills = [
   { name: "Python", icon: <FaPython className="text-green-400" /> }, // Softer green
   { name: "JavaScript", icon: <FaJs className="text-yellow-300" /> }, // Softer yellow
   { name: "React", icon: <FaReact className="text-blue-400" /> }, // Light blue
+  { name: "NodeJs", icon: <FaNodeJs className="text-green-400" /> }, // Light blue
   { name: "HTML5", icon: <FaHtml5 className="text-orange-400" /> }, // Softer orange
   { name: "CSS3", icon: <FaCss3Alt className="text-blue-300" /> }, // Slightly lighter blue
   { name: "Git/GitHub", icon: <FaGithub className="text-gray-300" /> }, // Subtle gray

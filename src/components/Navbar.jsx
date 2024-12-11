@@ -30,10 +30,11 @@ export const Navbar = () => {
 
   // Navbar items
   const navItems = [
-    { name: "About", links: "about", id: 0 },
-    { name: "Projects", links: "projects", id: 1 },
-    { name: "Skills", links: "skills", id: 2 },
-    { name: "Contact", links: "contact", id: 3 },
+    { name: "Home", links: "home", id: 0 },
+    { name: "About", links: "about", id: 1 },
+    { name: "Projects", links: "projects", id: 2 },
+    { name: "Skills", links: "skills", id: 3 },
+    { name: "Contact", links: "contact", id: 4 },
   ];
 
   return (
