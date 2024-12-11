@@ -3,6 +3,8 @@ import { useState, useRef } from "react";
 import Input from "./Input";
 import Textarea from "./Textarea";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Form = () => {
   const form = useRef();
@@ -20,10 +22,11 @@ const Form = () => {
       })
       .then(
         () => {
-          alert("SUCCESS!");
+          form.current.reset();
+          toast.success("Message sent successfully");
         },
         (error) => {
-          alert("FAILED...", error.text);
+          toast.error("FAILED to send msg. Please try again: " + error.message);
         }
       );
   };
@@ -61,6 +64,7 @@ const Form = () => {
         >
           Submit
         </button>
+        <ToastContainer />
       </form>
     </div>
   );

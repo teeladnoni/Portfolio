@@ -1,16 +1,16 @@
 import React from "react";
 
+
 export const projectsData = [
   {
     id:0,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React and Node.js",
-    image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
+    title: "Blog",
+    description: "A full-stack Blog solution with React and Python.",
+    image:"https://media.istockphoto.com/id/887987150/photo/blogging-woman-reading-blog.jpg?s=612x612&w=0&k=20&c=7SScR_Y4n7U3k5kBviYm3VwEmW4vmbngDUa0we429GA=",
     category: "fullstack",
-    technologies: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    technologies: ["React", "Python", "PostgreSQL"],
+    github: "https://github.com/teeladnoni/blogger_web/tree/master",
+    demo: "https://blog-demo-dx5q.onrender.com/",
   },
   {
     id:1,
@@ -20,13 +20,14 @@ export const projectsData = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     category: "frontend",
     technologies: ["React", "Tailwind CSS"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/teeladnoni/Portfolio",
+    demo: "home",
   },
   {
     id:2,
-    title: "Task Management API",
-    description: "RESTful API for task management application",
+    title: "CodePoints",
+    description: "A simple web app to store and organize key points from your coding journey. Perfect for saving concepts, " + 
+    "snippets, and tips as you learn and grow.",
     image:
       "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1000",
     category: "backend",

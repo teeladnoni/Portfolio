@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { projectsData, categories } from "./Project";
+import project1 from "../assets/project1.png"
 
 const ProjectsSection = () => {
   const [activeTab, setActiveTab] = useState("All");

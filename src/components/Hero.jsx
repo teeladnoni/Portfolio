@@ -9,6 +9,7 @@ import {
   AiFillYoutube,
   AiFillTwitterSquare,
 } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 export const Hero = () => {
   const [linkedin, twitter, github, facebook, youtube] = [
@@ -93,7 +94,11 @@ export const Hero = () => {
               className="absolute inset-0 bg-gradient-to-r from-[#6b2b72] to-[#a5079d] transition-all duration-300 scale-x-0 group-hover:scale-x-100 origin-left"
               aria-hidden="true"
             ></span>
-            <span className="relative z-10">View Work</span>
+            <span className="relative z-10">
+              <Link smooth={true} offset={30} duration={500} to="contact">
+                Hire Me
+              </Link>
+            </span>
           </button>
         </div>
       </div>
