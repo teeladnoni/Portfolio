@@ -2,6 +2,7 @@ import React from "react";
 
 export const projectsData = [
   {
+    id:0,
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce solution with React and Node.js",
     image:
@@ -12,6 +13,7 @@ export const projectsData = [
     demo: "https://demo.com",
   },
   {
+    id:1,
     title: "Portfolio Website",
     description: "Modern portfolio website with React and Tailwind CSS",
     image:
@@ -22,6 +24,7 @@ export const projectsData = [
     demo: "https://demo.com",
   },
   {
+    id:2,
     title: "Task Management API",
     description: "RESTful API for task management application",
     image:

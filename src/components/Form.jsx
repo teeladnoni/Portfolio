@@ -5,7 +5,7 @@ import Textarea from "./Textarea";
 const Form = () => {
   return (
     <div className="flex flex-col w-full md:w-2/3 space-y-4">
-      <h2 className="text-3xl font-bold span">Let's work together</h2>
+      <h2 className="text-2xl md:3xl font-bold span">Let's work together</h2>
       <p className="text-white/70">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aliquam
         consequuntur alias, amet voluptate error hic delectus. Temporibus

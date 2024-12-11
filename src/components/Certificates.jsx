@@ -3,20 +3,20 @@ import udemlogo from "../assets/udemlogo.png";
 
 const certifications = [
   {
-    courseName: "Course Title 1",
+    courseName: "The Complete 2024 Web Development Bootcamp",
     platform: "Udemy",
     date: "December 2024",
     description:
-      "This course focused on [brief course content]. I learned [skills].",
-    certificateLink: "#", // link to your certificate if available
+      "Completed a web development bootcamp that covered full-stack development.",
+    certificateLink: "http://ude.my/UC-20d95da2-2d15-4e5c-8e15-44777c878dfb", // link to your certificate if available
   },
   {
-    courseName: "Course Title 2",
+    courseName: "100 Days of Code: The Complete Python Pro Bootcamp",
     platform: "Udemy",
     date: "November 2024",
     description:
-      "This course focused on [brief course content]. I learned [skills].",
-    certificateLink: "#", // link to your certificate if available
+      "Completed a comprehensive Python course on Udemy.",
+    certificateLink: "http://ude.my/UC-80c2acaa-1212-4bf4-96ec-e70c0088266b", // link to your certificate if available
   },
 ];
 
@@ -32,7 +32,7 @@ const Credentials = () => {
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="flex items-start p-6 bg-gray-800 text-white card rounded-lg shadow-md hover:shadow-xl transition duration-300"
+              className="flex items-start p-6 bg-gray-800 text-white  card rounded-lg shadow-md hover:shadow-xl transition duration-300"
             >
               <div className="flex-shrink-0 mr-6">
                 <img
@@ -45,7 +45,7 @@ const Credentials = () => {
                 <h3 className="text-xl font-semibold">{cert.courseName}</h3>
                 <p className="">{cert.platform}</p>
                 <p className="text-sm  mb-4">{cert.date}</p>
-                <p className="">{cert.description}</p>
+                <p className="text-lg">{cert.description}</p>
                 <a
                   href={cert.certificateLink}
                   className="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-[#dd32f3] to-[#ce90cb] hover:scale-105  text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 hover:shadow-lg transition duration-300"

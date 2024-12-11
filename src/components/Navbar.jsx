@@ -73,32 +73,37 @@ export const Navbar = () => {
       {isOpen ? <AiOutlineClose size="24" /> : <AiOutlineMenu size="24" />}
     </div>
 
-    {/* Mobile Menu */}
-    <div
-      className={`${
-        isOpen
-          ? "text-center z-20 fixed h-full w-full left-0 top-0 bg-[#232323]"
-          : "md:hidden fixed left-[-100%]"
-      } transition-all duration-300`}
+   {/* Mobile Menu */}
+<div
+  className={`${
+    isOpen
+      ? "text-right z-20 fixed h-screen top-0 left-1/3 right-0"
+      : "fixed top-0 right-[-100%] md:hidden"
+  } transition-all duration-300`}
+>
+<ul className="font-semibold text-xl px-8 h-full bg-[#232323] shadow-lg border-l border-gray-600 space-y-4 pt-[65px]">
+  {navItems.map((item) => (
+    <li
+      className="cursor-pointer py-3 hover:text-white hover:underline transition-all duration-200"
+      key={item.id}
     >
-      <ul className="font-semibold text-3xl space-y-6 mt-20">
-        {navItems.map((item) => (
-          <li className="cursor-pointer" key={item.id}>
-            <Link
-              onClick={toggleMenu}
-              to={item.links}
-              smooth={true}
-              offset={50}
-              duration={500}
-              className="active:text-pink-500"
-              activeClass="text-pink-500"
-            >
-              {item.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <Link
+        onClick={toggleMenu}
+        to={item.links}
+        smooth={true}
+        offset={50}
+        duration={500}
+        className="active:text-pink-500"
+        activeClass="text-pink-500"
+      >
+        {item.name}
+      </Link>
+    </li>
+  ))}
+</ul>
+
+</div>
+
   </div>
 </div>
 

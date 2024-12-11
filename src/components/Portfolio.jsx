@@ -17,9 +17,9 @@ const ProjectsSection = () => {
         My <span className="span">Projects</span>
       </h2>
       <div className="flex justify-center flex-wrap gap-4 mb-8">
-        {categories.map((category) => (
+        {categories.map((category,index) => (
           <button
-            key={category}
+            key={category+index}
             className={`py-2 px-4 rounded-full text-sm font-semibold transition-all ${
               activeTab === category
                 ? "bg-gradient-to-r from-[#dd32f3] to-[#ce90cb] text-white"
@@ -34,7 +34,7 @@ const ProjectsSection = () => {
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.map((project, index) => (
-          <div className="bg-gray-800 card rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+          <div key={project.id}className="bg-gray-800 card rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
             <img
               src={project.image}
               alt={project.title}
@@ -48,9 +48,9 @@ const ProjectsSection = () => {
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies.map((tech, idx) => (
+                {project.technologies.map((tech) => (
                   <span
-                    key={idx}
+                    key={tech+index}
                     className="text-xs bg-purple-600 text-white px-2 py-1 rounded"
                   >
                     {tech}

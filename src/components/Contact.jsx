@@ -8,12 +8,12 @@ const contactInfo = [
   {
     icon: <FaPhone size={20}/>,
     title: "Phone",
-    description: "(+021) 251 198 254",
+    description: "+234 9069579704",
   },
   {
     icon: <FaMessage size={20}/>,
     title: "Email",
-    description: "youremail@gmail.com",
+    description: "purecoders@gmail.com",
   },
   {
     icon: <FaLocationPin size={20}/>,
@@ -24,6 +24,7 @@ const contactInfo = [
 
 const Contact = () => {
   return (
+    
     <div id="contact" className="min-h-screen bg-[#232325] flex  justify-center p-6">
     <div className="w-full flex flex-col md:flex-row gap-10 bg-[#232325] p-8 ">
       <div className="w-full flex flex-col items-center justify-center md:w-2/3">
