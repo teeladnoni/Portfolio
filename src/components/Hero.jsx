@@ -14,8 +14,8 @@ export const Hero = () => {
     "https://www.linkedin.com",
     "https://www.instagram.com",
     "https://www.github.com",
-    "https://www.facebook.com",
-    "https://www.youtube.com",
+    "https://www.facebook.com/Oyetunjiteelad",
+    "https://www.youtube.com/@pure_coders",
   ];
 
   return (
