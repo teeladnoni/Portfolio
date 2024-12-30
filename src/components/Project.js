@@ -21,7 +21,7 @@ export const projectsData = [
     category: "frontend",
     technologies: ["React", "Tailwind CSS"],
     github: "https://github.com/teeladnoni/Portfolio",
-    demo: "home",
+    demo: "/",
   },
   {
     id:2,

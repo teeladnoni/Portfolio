@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: <FaLocationPin size={20}/>,
     title: "Address",
-    description: "Osun State, Nigeria",
+    description: "Nigeria",
   },
 ];
 
