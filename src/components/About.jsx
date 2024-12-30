@@ -1,5 +1,5 @@
 import React from "react";
-import project1 from "../assets/project1.png";
+import logo from "../assets/logo.jpg";
 
 const About = () => {
   const aboutMe =
@@ -14,9 +14,9 @@ const About = () => {
   {/* Left Section (Image) */}
   <div className="w-full md:w-1/2  flex justify-center">
     <img
-      src={project1}
+      src={logo}
       alt="About me"
-      className="object-cover rounded-xl h-[280px] w-full max-w-[400px] filter grayscale brightness-50"
+      className="object-cover rounded-xl h-[280px] w-full max-w-[400px] filter grayscale brightness-50 hover:brightness-100 hover:filter-none"
     />
   </div>
 
