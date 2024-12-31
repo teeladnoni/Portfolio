@@ -44,7 +44,7 @@ export const Hero = () => {
               1000,
               "Fullstack Development",
               1000,
-              "Software Enginearing",
+              "Software Engineering",
               1000,
               "Bot Automation",
               1000,
