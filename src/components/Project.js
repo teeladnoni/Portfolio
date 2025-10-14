@@ -32,8 +32,8 @@ export const projectsData = [
       "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=1000",
     category: "backend",
     technologies: ["Node.js", "Express", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    github: "https://github.com/teeladnoni/code-point",
+    demo: "https://teeladnoni.github.io/code-point/",
   },
 ];
 
