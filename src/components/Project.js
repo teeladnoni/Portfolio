@@ -11,7 +11,8 @@ export const projectsData = [
   technologies: ["PHP", "MySQL", "Tailwind CSS", "JavaScript", "HTML"],
   role: "Full-Stack Developer",
   company: "MStar Innovations Limited",
-  demo: "https://www.osunyouthaffairs.com/"
+  demo: "https://www.osunyouthaffairs.com/",
+  live: true
 },
 
   {
