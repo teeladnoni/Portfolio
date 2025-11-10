@@ -79,7 +79,7 @@ const ProjectsSection = () => {
                   href={project.demo}
                   className="bg-gradient-to-r from-[#dd32f3] to-[#ce90cb] hover:scale-105  text-white py-1 px-3 rounded"
                 >
-                  Demo
+                  {project.live? 'Live' : 'Demo'}
                 </a>
               </div>
             </div>
