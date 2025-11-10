@@ -6,7 +6,7 @@ export const projectsData = [
   id: 1,
   title: "Osun State Ministry of Youth Affairs Portal",
   description: "Developed and deployed the official website for the Osun State Ministry of Youth Affairs while working as a Full-Stack Developer at MStar Innovations Limited. The platform allows youth registration, event updates, and digital communication between the ministry and citizens, built with a responsive, secure full-stack architecture.",
-  image: "https://www.osunyouthaffairs.com/assets/images/og-image.jpg", // replace if needed
+  image: "https://www.osunyouthaffairs.com/images/logg.png", // replace if needed
   category: "Government / Youth Empowerment Platform",
   technologies: ["PHP", "MySQL", "Tailwind CSS", "JavaScript", "HTML"],
   role: "Full-Stack Developer",
