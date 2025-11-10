@@ -3,15 +3,17 @@ import React from "react";
 
 export const projectsData = [
   {
-    id:0,
-    title: "Blog",
-    description: "A full-stack Blog solution with React and Python.",
-    image:"https://media.istockphoto.com/id/887987150/photo/blogging-woman-reading-blog.jpg?s=612x612&w=0&k=20&c=7SScR_Y4n7U3k5kBviYm3VwEmW4vmbngDUa0we429GA=",
-    category: "fullstack",
-    technologies: ["React", "Python", "PostgreSQL"],
-    github: "https://github.com/teeladnoni/blogger_web/tree/master",
-    demo: "https://blog-demo-dx5q.onrender.com/",
-  },
+  id: 1,
+  title: "Osun State Ministry of Youth Affairs Portal",
+  description: "Developed and deployed the official website for the Osun State Ministry of Youth Affairs while working as a Full-Stack Developer at MStar Innovations Limited. The platform allows youth registration, event updates, and digital communication between the ministry and citizens, built with a responsive, secure full-stack architecture.",
+  image: "https://www.osunyouthaffairs.com/assets/images/og-image.jpg", // replace if needed
+  category: "Government / Youth Empowerment Platform",
+  technologies: ["PHP", "MySQL", "Tailwind CSS", "JavaScript", "HTML"],
+  role: "Full-Stack Developer",
+  company: "MStar Innovations Limited",
+  demo: "https://www.osunyouthaffairs.com/"
+},
+
   {
     id:1,
     title: "Portfolio Website",
